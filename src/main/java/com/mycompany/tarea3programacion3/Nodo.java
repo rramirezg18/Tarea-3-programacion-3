@@ -13,7 +13,7 @@ public class Nodo {
     ArrayList<Integer> claves;
     ArrayList<Nodo> hijos;
     boolean esHoja;
-    
+    //constructor
     public Nodo(boolean esHoja){
         this.esHoja = esHoja;
         claves = new ArrayList<>();
