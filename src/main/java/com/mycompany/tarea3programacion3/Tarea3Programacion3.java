@@ -24,6 +24,7 @@ public class Tarea3Programacion3 {
             opcion = entrada.nextInt();
             switch(opcion){
                 case 1:
+                    //ingresar claves al Árbol b
                     boolean continuarIngresando = true;
                     while (continuarIngresando) {
                         System.out.print("Ingrese una clave: ");
@@ -54,8 +55,12 @@ public class Tarea3Programacion3 {
                     arbol.mostrar();
                     System.out.println("Ingrese claves para buesqueda");
                     int claveBuscar = entrada.nextInt();
-                    arbol.busqueda(claveBuscar);
-       
+                    boolean encontrado = arbol.busqueda(claveBuscar);
+                    if (encontrado) {
+                        System.out.println("La clave " + claveBuscar + " se encuentra en el árbol");
+                    } else {
+                        System.out.println("La clave " + claveBuscar + " no se encuentra en el árbol");
+                    }
                     break;
                 case 4:
                     salir = 1;
